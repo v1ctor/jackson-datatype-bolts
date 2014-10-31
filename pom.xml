@@ -12,7 +12,7 @@
 
     <groupId>ru.yandex</groupId>
     <artifactId>jackson-datatype-bolts</artifactId>
-    <version>0.1</version>
+    <version>0.1-SHANPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Jackson-Yandex-Bolts-Module</name>
