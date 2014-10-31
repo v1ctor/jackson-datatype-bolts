@@ -8,6 +8,52 @@
     <artifactId>jackson-datatype-bolts</artifactId>
     <version>0.1</version>
 
+    <name>Jackson-Yandex-Bolts-Module</name>
+    <description>Jackson datatype module for Yandex Bolts library.</description>
+    <url>https://github.com/${github.repo}</url>
+    <licenses>
+        <license>
+            <name>The GNU Lesser General Public License, Version 3.0</name>
+            <url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Yandex</name>
+        <url>http://www.yandex.ru</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>v1ctor</id>
+            <name>Victor Buldakov</name>
+            <email>vbuldakov@yandex-team.ru</email>
+            <organization>Yandex</organization>
+            <organizationUrl>http://www.yandex.ru</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Moscow</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/${github.repo}</url>
+        <connection>scm:git:git@github.com:${github.repo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${github.repo}.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/${github.repo}/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <properties>
+        <github.repo>v1ctor/jackson-datatype-bolts</github.repo>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -42,5 +88,37 @@
 
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <configuration>
+                    <passphrase>${gpg.passphrase}</passphrase>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>1.7</source>
+                        <target>1.7</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
