@@ -1,4 +1,4 @@
-[Jackson](http://jackson.codehaus.org) module to support JSON serializtion and deserializtion of [Yandex Bolts](https://bitbucket.org/stepancheg/bolts) collection types.
+[Jackson](http://jackson.codehaus.org) module to support JSON serializtion and deserializtion of [Yandex Bolts](https://github.com/v1ctor/bolts) collection types.
 
 ## Usage
 ### Maven dependency
