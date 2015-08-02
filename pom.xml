@@ -10,7 +10,7 @@
 
     <groupId>ru.yandex</groupId>
     <artifactId>jackson-datatype-bolts</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.3</version>
     <packaging>jar</packaging>
 
     <name>Jackson-Yandex-Bolts-Module</name>
